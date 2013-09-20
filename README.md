@@ -29,5 +29,8 @@ Ideas--
  
   Google Predictions API 
  
-  Food predictor thing 
+  Food recommendation engine 
   
+  Reddit comments? 
+  
+  Something that fills a need. Hmm. 
