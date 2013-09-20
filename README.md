@@ -20,6 +20,9 @@ MongoDB <3
 
 XML 
 
+Mapping
+
+OpenCV (Computer vision library)
 
 Ideas--
   Scrape some data from somewhere? Reddit?
