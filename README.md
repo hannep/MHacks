@@ -7,19 +7,17 @@ Skills:
 
 Frontend Web Stuff 
   HTML, CSS, Bootstrap. 
-
 Databases 
-
 Webapps - Spring (framework) 
-
 C, Python, Java
-
 Scraping stuff 
+MongoDB <3 
+
+
 
 Ideas--
   Scrape some data from somewhere? Reddit?
   Google Predictions API 
   Food predictor thing 
   
-
 
