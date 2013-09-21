@@ -37,3 +37,4 @@ Ideas--
   
   What about a group texting thing that could be set up really easily on the fly, and then taken down just as easily? Could be useful for a group project, or if five people go to the fair or Chinatown, etc. Operate just by text, or with an app.  
 
+Added Jenkins to port 8080
