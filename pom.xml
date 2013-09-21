@@ -17,10 +17,6 @@
     </build>
   <dependencies>
   	<dependency>
-  		<groupId>javax.servlet</groupId>
-  		<artifactId>javax.servlet-api</artifactId>
-  	</dependency>
-  	<dependency>
   		<groupId>com.google.code.gson</groupId>
   		<artifactId>gson</artifactId>
   	</dependency>
@@ -28,14 +24,13 @@
   		<groupId>org.mongodb</groupId>
   		<artifactId>mongo-java-driver</artifactId>
   	</dependency>
+  	<dependency>
+  		<groupId>javax.servlet</groupId>
+  		<artifactId>javax.servlet-api</artifactId>
+  	</dependency>
   </dependencies>
   <dependencyManagement>
   	<dependencies>
-  		<dependency>
-  			<groupId>javax.servlet</groupId>
-  			<artifactId>javax.servlet-api</artifactId>
-  			<version>3.0.1</version>
-  		</dependency>
   		<dependency>
   			<groupId>com.google.code.gson</groupId>
   			<artifactId>gson</artifactId>
@@ -45,6 +40,12 @@
   			<groupId>org.mongodb</groupId>
   			<artifactId>mongo-java-driver</artifactId>
   			<version>2.11.1</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>javax.servlet</groupId>
+  			<artifactId>javax.servlet-api</artifactId>
+  			<version>3.0.1</version>
+  			<scope>provided</scope>
   		</dependency>
   	</dependencies>
   </dependencyManagement>
