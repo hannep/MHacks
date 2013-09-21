@@ -1,4 +1,4 @@
-package edu.test;
+package com.sbu.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -9,27 +9,35 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.google.gson.Gson;
+
+import com.sbu.repository.DataRepository;
+import com.sbu.servlet.BackEndController;
+
 /**
- * Servlet implementation class Test
+ * Servlet implementation class AppServlet
  */
-@WebServlet("/Test")
-public class Test extends HttpServlet {
+@WebServlet("/AppServlet")
+public class AppServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public Test() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
+	private DataRepository repo;
+	
+	public AppServlet()
+	{
+		//this.repo = BackEndController.getInstance().getRepo();
+	}
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	    PrintWriter out = response.getWriter();
-	    out.println("Hello World");
+		  PrintWriter out = response.getWriter();
+		  Gson gson = new Gson();
+		  out.println(gson.toJson("Hello World"));
+		  out.close();
+		  response.setStatus(HttpServletResponse.SC_OK);
+		  return;
 	}
 
 	/**
